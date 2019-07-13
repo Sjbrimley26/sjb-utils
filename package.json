@@ -1,0 +1,23 @@
+{
+  "name": "sjb-utils",
+  "version": "1.0.0",
+  "description": "Just a collection of utility functions",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Sjbrimley26/sjb-utils.git"
+  },
+  "keywords": [
+    "utility",
+    "generic"
+  ],
+  "author": "Spencer J. Brimley",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Sjbrimley26/sjb-utils/issues"
+  },
+  "homepage": "https://github.com/Sjbrimley26/sjb-utils#readme"
+}
