@@ -1,10 +1,11 @@
-const Arrays = require("./Arrays")
-const Functions = require("./Functions")
-const Math = require("./Math")
-const Objects = require("./Objects")
-const Random = require("./Random")
-const Strings = require("./Strings")
-const Misc = require("./Misc")
+import * as Arrays from "./Arrays";
+import * as Functions from "./Functions";
+import * as Math from "./Math";
+import * as Objects from "./Objects";
+import * as Random from "./Random";
+import * as Strings from "./Strings";
+import * as Misc from "./Misc";
+import * as Time from "./Time";
 
 const prettyPrint = obj => {
   console.log(JSON.stringify(obj, null, 2));
@@ -16,7 +17,7 @@ const trace = x => {
   return x;
 };
 
-module.exports = {
+export {
   Arrays,
   Functions,
   Math,
@@ -25,5 +26,6 @@ module.exports = {
   Strings,
   prettyPrint,
   Misc,
-  trace
+  trace,
+  Time
 };

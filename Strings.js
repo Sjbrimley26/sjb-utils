@@ -1,5 +1,5 @@
-const { multiply, divide } = require("./Math");
-const { compact } = require("./Arrays");
+import { multiply, divide } from "./Math";
+import { compact } from "./Arrays";
 
 const toUpperCase = str => str.toUpperCase()
 
@@ -35,7 +35,7 @@ const beginsWithAndEndsWith = (beginsWith, endsWith) => str => {
 
 const split = delimiter => str => str.split(delimiter);
 
-module.exports = {
+export {
   toUpperCase,
   decToPercentage,
   percentToDec,

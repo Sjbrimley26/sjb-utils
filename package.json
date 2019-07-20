@@ -1,6 +1,7 @@
 {
   "name": "sjb-utils",
-  "version": "1.0.0",
+  "sideEffects": false,
+  "version": "1.0.3",
   "description": "Just a collection of utility functions",
   "main": "index.js",
   "scripts": {

@@ -1,4 +1,4 @@
-const { sum } = require("./Math");
+import { sum } from "./Math";
 
 const uniques = arr => [...new Set(arr)]
 
@@ -50,7 +50,7 @@ const flatten = arr => {
   }, []);
 }
 
-module.exports = {
+export {
   uniques,
   compact,
   arrayCount,

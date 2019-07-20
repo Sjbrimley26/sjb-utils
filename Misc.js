@@ -6,7 +6,7 @@ function validateEmail(email) {
 const True = () => true;
 const False = () => false;
 
-module.exports = {
+export {
   validateEmail,
   True,
   False

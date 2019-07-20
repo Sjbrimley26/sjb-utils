@@ -6,7 +6,7 @@ const pipe = (...ops) => ops.reduce(_pipe)
 
 const unary = fn => arg => fn(arg);
 
-module.exports = {
+export {
   compose,
   unary,
   pipe

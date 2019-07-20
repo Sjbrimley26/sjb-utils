@@ -36,5 +36,5 @@ const Random = {
   }
 };
 
-module.exports = Random;
+export Random;
  

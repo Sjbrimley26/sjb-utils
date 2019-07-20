@@ -1,4 +1,4 @@
-const { compact } = require("./Arrays");
+import { compact } from "./Arrays";
 
 const get = key => obj => obj[key];
 
@@ -32,7 +32,7 @@ const sort = fn => obj => {
   }, {});
 }
 
-module.exports = {
+export {
   get,
   set,
   map,

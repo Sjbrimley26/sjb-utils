@@ -1,4 +1,4 @@
-const { sort } = require("./Arrays");
+import { sort } from "./Arrays";
 
 const toFixedFloat = (num, decimalPlaces) => parseFloat(num.toFixed(decimalPlaces))
 const add = x => y => toFixedFloat((x * 100 + y * 100) / 100, 2)
@@ -8,6 +8,9 @@ const divide = x => y => toFixedFloat(x * 100 / (y * 100), 2)
 const pow = x => y => toFixedFloat(Math.pow(x, y), 2);
 const sqrt = x => toFixedFloat(Math.sqrt(x), 2);
 const cos = x => toFixedFloat(Math.cos(x), 2);
+const sin = x => toFixedFloat(Math.sin(x), 2);
+const tan = x => toFixedFloat(Math.tan(x), 2);
+const atan = x => toFixedFloat(Math.atan(x), 2);
 
 const isDivisbleBy = denominator => numerator => numerator % denominator === 0
 
@@ -86,7 +89,9 @@ const toRadians = d => d * (Math.PI / 180)
 
 const getHypotenuse = (a, b) => sqrt(pow(a, 2) + pow(b, 2))
 
-module.exports = {
+const slopeToDegrees = s => toDegrees(atan(s));
+
+export {
   toFixedFloat,
   add,
   subtract,
@@ -109,5 +114,9 @@ module.exports = {
   pow,
   sqrt,
   cos,
-  getHypotenuse
+  getHypotenuse,
+  sin,
+  tan,
+  atan,
+  slopeToDegrees
 };
