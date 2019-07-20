@@ -6,8 +6,20 @@ function validateEmail(email) {
 const True = () => true;
 const False = () => false;
 
+const prettyPrint = obj => {
+  console.log(JSON.stringify(obj, null, 2));
+  return obj;
+};
+
+const trace = x => {
+  console.log(x);
+  return x;
+};
+
 export {
   validateEmail,
   True,
-  False
+  False,
+  prettyPrint,
+  trace
 };
