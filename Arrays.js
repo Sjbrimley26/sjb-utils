@@ -50,6 +50,18 @@ const flatten = arr => {
   }, []);
 }
 
+const distinct = prop => arr => {
+  const res = [];
+  const map = new Map();
+  for (const item of arr) {
+    if (!map.has(item[prop])) {
+      map.set(item[prop], true);
+      res.push(item);
+    }
+  }
+  return res;
+}
+
 export {
   uniques,
   compact,
@@ -62,5 +74,6 @@ export {
   filter,
   reduce,
   sort,
-  flatten
+  flatten,
+  distinct
 };
