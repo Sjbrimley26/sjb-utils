@@ -1,5 +1,5 @@
 import { sum } from "./Math";
-import { range } from "./Array"
+import { range } from "./Arrays";
 
 const Random = {
   int(min, max) { // includes both the min and max
