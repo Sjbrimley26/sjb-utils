@@ -1,3 +1,6 @@
+import { sum } from "./Math";
+import { range } from "./Array"
+
 const Random = {
   int(min, max) { // includes both the min and max
     return Math.floor(Math.random() * (max - min + 1) + min);

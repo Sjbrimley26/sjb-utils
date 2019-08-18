@@ -6,8 +6,22 @@ const pipe = (...ops) => ops.reduce(_pipe)
 
 const unary = fn => arg => fn(arg);
 
+function once(fn, context) { 
+	var result;
+
+	return function() { 
+		if(fn) {
+			result = fn.apply(context || this, arguments);
+			fn = null;
+		}
+
+		return result;
+	};
+}
+
 export {
   compose,
   unary,
-  pipe
+  pipe,
+  once
 };
