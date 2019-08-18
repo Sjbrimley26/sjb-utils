@@ -14,8 +14,6 @@ export {
   Objects,
   Random,
   Strings,
-  prettyPrint,
   Misc,
-  trace,
   Time
 };
