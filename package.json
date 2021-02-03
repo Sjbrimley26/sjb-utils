@@ -1,24 +1,55 @@
 {
-  "name": "sjb-utils",
-  "sideEffects": false,
-  "version": "1.0.8",
+  "_from": "sjb-utils",
+  "_id": "sjb-utils@1.0.13",
+  "_inBundle": false,
+  "_integrity": "sha512-bcvxz4MjLi4M0S3pzURInC2b9MFHjTJ91p68SxP37lmb9i6IXiVo3oytSfjIO+MQPePXtkuHMqh1dQGB3YfKQA==",
+  "_location": "/sjb-utils",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "tag",
+    "registry": true,
+    "raw": "sjb-utils",
+    "name": "sjb-utils",
+    "escapedName": "sjb-utils",
+    "rawSpec": "",
+    "saveSpec": null,
+    "fetchSpec": "latest"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/",
+    "/sjb-geometry",
+    "/sjb-physics"
+  ],
+  "_resolved": "https://registry.npmjs.org/sjb-utils/-/sjb-utils-1.0.13.tgz",
+  "_shasum": "4e284a85a06241e4d6381ad20b81bc4505f6cf1a",
+  "_spec": "sjb-utils",
+  "_where": "C:\\Users\\spenc\\Documents\\Spencer\\test",
+  "author": {
+    "name": "Spencer J. Brimley"
+  },
+  "bugs": {
+    "url": "https://github.com/Sjbrimley26/sjb-utils/issues"
+  },
+  "bundleDependencies": false,
+  "deprecated": false,
   "description": "Just a collection of utility functions",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/Sjbrimley26/sjb-utils.git"
-  },
+  "homepage": "https://github.com/Sjbrimley26/sjb-utils#readme",
   "keywords": [
     "utility",
     "generic"
   ],
-  "author": "Spencer J. Brimley",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/Sjbrimley26/sjb-utils/issues"
+  "main": "index.js",
+  "name": "sjb-utils",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Sjbrimley26/sjb-utils.git"
   },
-  "homepage": "https://github.com/Sjbrimley26/sjb-utils#readme"
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "sideEffects": false,
+  "type": "module",
+  "version": "1.0.13"
 }

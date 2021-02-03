@@ -1,12 +1,34 @@
-import { multiply, divide } from "./Math";
-import { compact } from "./Arrays";
+import { multiply, divide } from "./Math.js";
 
+/**
+ * @param {string} str a string
+ * @returns {string} the string, in all uppercase letters.
+ */
 const toUpperCase = str => str.toUpperCase()
 
+/**
+ * @param {string} str a string
+ * @returns the string with the first letter capitalized.
+ */
 const capitalize = str => str.charAt(0).toUpperCase() + str.slice(1);
 
+/**
+ * @param {number} num a decimal between 0 and 1.
+ * @returns {string} a percentage string
+ * @example
+ * // returns "50%"
+ * decToPercentage(.5)
+ */
 const decToPercentage = num => multiply(num)(100) + "%"
 
+/**
+ * 
+ * @param {(string|number)} numOrString a number string with % at the end or a number e.g. "50%" or 50
+ * @returns {number} the decimal version of the number provided.
+ * @example
+ * // returns 0.5
+ * percentToDec("50%")
+ */
 const percentToDec = numOrString => {
   const num =
     isNaN(numOrString) ?

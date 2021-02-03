@@ -93,6 +93,12 @@ const infinite = value => {
   });
 }
 
+export {
+  range,
+  from,
+  infinite
+}
+
 // based on some preliminary results, the initial creation takes the most time
 // and then any subsequent extractions or transformations are trivial.
 
